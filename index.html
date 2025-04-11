@@ -1,0 +1,427 @@
+<html>
+    <head>
+        <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            .main-section{
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+            }
+            .content-section{
+                height: 45.5em;
+                width: 60em;
+            }
+            .text-1{
+                height: 1em;
+                width: 45em;
+                margin-top: 6em;
+                margin-left: 7em;
+                display: flex;
+                justify-content: space-between;
+            }
+            .intext1{
+                height: 1em;
+                width: 12em;
+                display: flex;
+                justify-content: space-evenly;
+                opacity: 40%;
+
+            }
+            .text-2{
+                height: 5em;
+                width: 20em;
+                margin-top: 8em;
+                margin-left: 7em;
+            }
+            .paragraph-1{
+                height:5em;
+                width: 22em;
+                margin-top: 0.8em;
+                margin-left: 7em;
+                opacity: 50%;
+            }
+            .action{
+                height: 2em;
+                width: 18em;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: 7em;
+                margin-top: 5em;
+            }
+            .action-1{
+              height: 1.8em;
+              width: 6em;
+              background-color: aqua;
+              color: white;
+              padding: 0.2rem;
+              border-radius: 2rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .action-2{
+            border: 1px solid gray;
+              height: 1.8em;
+              width: 6em;
+              color: rgb(13, 13, 13);
+              padding: 0.2rem;
+              border-radius: 2rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .paragraph-2{
+                height:1em;
+                width: 22em;
+                margin-top: 2em;
+                margin-left: 7em;
+                opacity: 50%;
+            }
+            .image{
+                height: 100vh;
+                width: 38.5vw;
+                background-image: url(./Photo.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-left: 9rem;
+            }
+            /* for page 2 */
+
+
+
+
+            .main-section-2{
+                height: 100vh;
+                width: 100vw;
+                background-image: url(./Image.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #2F1893;
+            }
+            .title{
+                margin-top: 3em;
+                color: white;
+            }
+            .paragraph-3{
+                height: 2em;
+                width: 28em;
+                color: white;
+                margin-top: 1em;
+                word-spacing: 0.1em;
+            }
+            .features{
+                display: flex;
+                justify-content: space-between;
+                height: 30em;
+                width: 82em;
+                margin-top: 3em;
+            }
+            .box-1{
+                border: 1px solid rgba(255, 255, 255, 0.468);
+                height: 30em;
+                width: 26em;
+                border-radius: 0.5em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .inbox-1{
+                color: white;
+                margin-top: 3em;
+            }
+            .inbox-2{
+                color: white;
+                margin-top: 1em;
+                color:#FFFFFF;
+                
+            }
+            .inbox-3{
+                height: 5em;
+                width: 14em;
+                margin-top: 2em;
+                opacity: 50%;
+                color: white;
+                text-align: center;
+                font-size: 1.2em;
+                line-height: 1.5em;
+            }
+            .inbox-4{
+                margin-top: 2em;
+                padding: 0.7em;
+                padding-bottom: 1.4em;
+                padding-left: 1em;
+                border-radius: 3em;
+                height: 0.2em;
+                width: 5.5em;
+                background-color:#E93A7D;
+                color: white;
+            }
+            .box-2{
+                border: 1px solid rgba(255, 255, 255, 0.468);
+                height: 30em;
+                width: 26em;
+                border-radius: 0.5em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .box-3{
+                border: 1px solid rgba(255, 255, 255, 0.468);
+                height: 30em;
+                width: 26em;
+                border-radius: 0.5em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+
+
+
+
+            /* 3rd page */
+            .main-section-3{
+                height: 100vh;
+                width: 100vw;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .title-1{
+                margin-top: 7em;
+            }
+            .paragraph-4{
+                height: 2em;
+                width: 30em;
+                text-align: center;
+                margin: 1em;
+                opacity: 60%;
+            }
+            .team{
+                border: 1px solid gray;
+                margin: 1.9em;
+                height: 1.8em;
+                width: 7.5em;
+                padding-left: 1.4em;
+                padding-top: 0.6em;
+                border-radius: 2em;
+                opacity: 80%;
+                font-size: 0.8em;
+                letter-spacing: 0.03em;
+                
+            }
+            .members{
+                display: flex;
+                justify-content: space-between;
+                height: 20em;
+                width: 85em;
+                margin-top: 2em;
+            }
+            .members-1{
+                border: 2px solid #EBEAED;
+                height: 20em;
+                width: 20em;
+                margin-left: 10em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .members-2{
+                border: 2px solid #EBEAED;
+                height: 20em;
+                width: 20em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .members-3{
+                border: 2px solid #EBEAED;
+                height: 20em;
+                width: 20em;
+                margin-right: 10em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .inmembers-1{
+                margin-top: 3em;
+            }
+            .inmembers-2{
+                margin-top: 1em;
+            }
+            .inmembers-3{
+                margin-top: 1em;
+                opacity: 70%;
+                font-size: small;
+            }
+            .inmembers-4{
+             display: flex;
+             margin-top: 3em;
+             border: 2px solid #EBEAED;
+             width: 20em;  
+             height: 3.2em;
+             justify-content: space-evenly;
+             align-items: center;
+             opacity: 45%;
+            }
+            .icon{
+                border: 2px solid #EBEAED;
+                height: 2.4em;
+                width: 7.5em;
+                border-left: hidden;
+                border-bottom: hidden;
+                border-top: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            
+            /* main section 4 */
+            .main-section-4{
+                height: 30vh;
+                width: 100vw;
+                background-color: #2F1893;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+            .texts-5{
+                height: 1em;
+                width: 40em;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 5em;
+                color: white;
+            }
+           
+            .last{
+                margin-top: 5em;
+                color: white;
+                font-size: 0.6em;
+                margin-top: 7em;
+
+            }
+        </style>
+    </head>
+        <body>
+            <!-- 1stpage -->
+            <div class="main-section">
+                <!-- left side -->
+                <div class="content-section">
+                    <!-- 1st text -->
+                    <div class="text-1">
+                        <div>
+                            <h4>Startup 3</h4>
+                        </div>
+                        <div class="intext1"> 
+                            <div><h5>Pricing</h5></div>
+                            <div><h5>About</h5></div>
+                        </div>
+                    </div>
+                    <!-- 2nd text -->
+                     <div class="text-2"><h1>Great tool to boost your startup</h1></div>
+                     <!-- paragraph -->
+                      <div class="paragraph-1"><p>We made it so beutiful and simple. It combines landings, pages, blogs and shop screens. It is definitely the tool you need in your collection! </p></div>
+                      <!-- for anchortag -->
+                       <div class="action">
+                            <div class="action-1"><a href=""></a>Get Started</div>
+                            <div class="action-2"><a href=""></a>Learn More</div>
+                       </div>
+                       <!-- for paragraph2 -->
+                        <div class="paragraph-2"><p>By signing up, you agree to the Terms of Service</p></div>
+                </div>  
+                <!-- right side -->
+                <div class="image"></div>
+             </div>
+             <!-- 2nd page -->
+             <div class="main-section-2">
+                 <!-- for title -->
+                <div class="title"><h1>Features</h1></div>
+                <!-- for paragraph -->
+                 <div class="paragraph-3"><p>We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p></div>
+                 <div class="features">
+                    <div class="box-1">
+                        <div class="inbox-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M13 10H20L11 23V14H4L13 1V10Z"></path></svg></div>
+                        <div class="inbox-2"><h2>Easy to Use</h2></div>
+                        <div class="inbox-3"><p>To get started, you select the desired sample and base the entire website on it. It’s that simple!</p></div>
+                        <div class="inbox-4"> <a href=""></a>Learn More</div>
+                    </div>
+                    <div class="box-2">
+                        <div class="inbox-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M18 17.8832V16L23 19L18 22V19.9095C14.9224 19.4698 12.2513 17.4584 11.0029 14.5453L11 14.5386L10.9971 14.5453C9.57893 17.8544 6.32508 20 2.72483 20H2V18H2.72483C5.52503 18 8.05579 16.3312 9.15885 13.7574L9.91203 12L9.15885 10.2426C8.05579 7.66878 5.52503 6 2.72483 6H2V4H2.72483C6.32508 4 9.57893 6.14557 10.9971 9.45473L11 9.46141L11.0029 9.45473C12.2513 6.5416 14.9224 4.53022 18 4.09051V2L23 5L18 8V6.11684C15.7266 6.53763 13.7737 8.0667 12.8412 10.2426L12.088 12L12.8412 13.7574C13.7737 15.9333 15.7266 17.4624 18 17.8832Z"></path></svg></div>
+                        <div class="inbox-2"><h2>Variety of Designs</h2></div>
+                        <div class="inbox-3"><p>You can decide whether to create your site using UI Kit blocks or samples. The blocks can merge together in various combinations.</p></div>
+                        <div class="inbox-4"> <a href=""></a>Learn More</div>
+                    </div>
+                    <div class="box-3">
+                        <div class="inbox-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM10.6219 8.41459C10.5562 8.37078 10.479 8.34741 10.4 8.34741C10.1791 8.34741 10 8.52649 10 8.74741V15.2526C10 15.3316 10.0234 15.4088 10.0672 15.4745C10.1897 15.6583 10.4381 15.708 10.6219 15.5854L15.5008 12.3328C15.5447 12.3035 15.5824 12.2658 15.6117 12.2219C15.7343 12.0381 15.6846 11.7897 15.5008 11.6672L10.6219 8.41459Z"></path></svg></div>
+                        <div class="inbox-2"><h2>Feel Our Design</h2></div>
+                        <div class="inbox-3"><p>Samples will show you the feeling on how to play around using the components in the website building process.</p></div>
+                        <div class="inbox-4"> <a href=""></a>Learn More</div>
+                    </div>
+                 </div>
+             </div>
+             <!-- 3rd page -->
+              <div class="main-section-3">
+                <div class="title-1"><h1>Our Awesome Team</h1></div>
+                <div class="paragraph-4"><p>We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p></div>
+                <div class="team"><h5>Enjoy Our Team</h5></div>
+                <div class="members">
+                    <div class="members-1">
+                        <div class="inmembers-1"><img src="./Userpic copy.png" alt=""></div>
+                        <div class="inmembers-2"><h4>Vanessa Laird</h4></div>
+                        <div class="inmembers-3"><p>UI Designer</p></div>
+                        <div class="inmembers-4">
+                            <div class="icon"><i class="ri-twitter-fill"></i></div>
+                            <div class="icon"><i class="ri-facebook-box-fill"></i></div>
+                            <div class="icon"><i class="ri-football-line"></i></div>
+                        </div>
+                    </div>
+                    <div class="members-2">
+                        <div class="inmembers-1"><img src="./Userpic.png" alt=""></div>
+                        <div class="inmembers-2"><h4>Mason Campbell</h4></div>
+                        <div class="inmembers-3"><p>UI Designer</p></div>
+                        <div class="inmembers-4">
+                            <div class="icon"><i class="ri-twitter-fill"></i></div>
+                            <div class="icon"><i class="ri-facebook-box-fill"></i></div>
+                            <div class="icon"><i class="ri-football-line"></i></div>
+                        </div>
+                    </div>
+                    <div class="members-3">
+                        <div class="inmembers-1"><img src="./Userpic (4).png" alt=""></div>
+                        <div class="inmembers-2"><h4>Irea Evans</h4></div>
+                        <div class="inmembers-3"><p>Client Manager</p></div>
+                        <div class="inmembers-4">
+                            <div class="icon"><i class="ri-twitter-fill"></i></div>
+                            <div class="icon"><i class="ri-facebook-box-fill"></i></div>
+                            <div class="icon"><i class="ri-football-line"></i></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <!-- 4th page -->
+              <div class="main-section-4">
+                    <div class="texts-5">
+                        <div><p>Portfolio</p></div>
+                        <div><p>How it Works</p></div>
+                        <div><p>Pricing</p></div>
+                        <div><p>About</p></div>
+                        <div><p>Contacts</p></div>
+                    </div>
+                    <div class="last"><p>© 2016 Designmodo. All rights reserved.</p></div>
+                </div>
+        </body>
+</html>
